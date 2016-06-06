@@ -1,14 +1,19 @@
 var selectElementsStartingWithA = function(array) {
   var results = [];
   for (var i = 0; i < array.length; i++) {
-    if (array[i].charAt(0) == 'a') 
+    if (array[i].charAt(0) == 'a')
       results.push(array[i]);
   }
   return results;
 }
 
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
+ var results = [];
+  for (var i = 0; i < array.length; i++) {
+    if (array[i].charAt(0) == 'a' || array[i].charAt(0) == 'e' || array[i].charAt(0) == 'i' || array[i].charAt(0) == 'o'  || array[i].charAt(0) == 'u')
+      results.push(array[i]);
+  }
+  return results;
 }
 
 var removeNullElements = function(array) {
