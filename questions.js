@@ -17,11 +17,15 @@ var selectElementsStartingWithVowel = function(array) {
 }
 
 var removeNullElements = function(array) {
-  return 'Write your method here';
+  array1 = array.filter(function(n){ return n != undefined });
+  return array1; 
 }
 
 var removeNullAndFalseElements = function(array) {
-  return 'Write your method here';
+  array1 = array.filter(function(n){ return n != undefined  });
+  array2 = array1.filter(function(n){ return n != false });
+  array2.push(0);
+  return array2;
 }
 
 var reverseWordsInArray = function(array) {
